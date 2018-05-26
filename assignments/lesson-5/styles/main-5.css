@@ -1,0 +1,91 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px; 
+  font-family: "Acme",sans-serif; /* Declare the base font-family */
+}
+
+header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+  max-width: 900px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+}
+
+header {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-left: 10px;
+}
+header h1 {
+   position: absolute;
+    top: 0px;
+    left: 100px;
+    width: auto;
+    height: 36px;
+    font-size: 36px;
+    color: #008fd5;
+    }
+header img {
+    position: relative;
+    }
+header .subheading {
+    position: absolute;
+    top: 60px;
+    float: left;
+    font-size: 24px;
+    color: #e3170a;
+    margin-left: 150px;
+  }
+nav {
+    position: relative;
+    top: -150px;
+    font-size: 18px;
+}
+nav button {}
+nav ul {
+    list-style-type: none;
+    margin-top: 150px;
+    padding: 0;
+    }
+nav ul li {
+   float: left;
+}
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+nav ul li.active a {
+    background-color: #e3170a; 
+}
+nav ul li a:hover {
+    background-color: #008fd5;
+}
+
+main {
+   
+}
+main h2 {
+    text-align: center;
+    margin-top: -10px;
+    color: #008fd5;
+    padding: 0;
+    
+}
+main h3 {
+    text-align: center;
+    margin-top: -10px;
+    color: #008fd5;
+    padding: 0;
+}
+
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img {
+
+}
+
+footer {
+    text-align: center;
+}
