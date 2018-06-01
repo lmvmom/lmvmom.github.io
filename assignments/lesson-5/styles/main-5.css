@@ -9,52 +9,48 @@ body {
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-  max-width: 900px; /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+    max-width: 1200px;
+    margin: 0 auto;/* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
 header {
-        position: relative;
-        left: 0;
-        top: 0;
-        margin-left: 10px;
-}
+        float: left;
+           }
 header h1 {
    position: absolute;
-    top: 0px;
+    top: 25px;
     left: 100px;
-    width: auto;
-    height: 36px;
     font-size: 36px;
     color: #008fd5;
     }
 header img {
-    position: relative;
-    }
+    float: left;
+        }
 header .subheading {
     position: absolute;
-    top: 60px;
-    float: left;
     font-size: 24px;
     color: #e3170a;
-    margin-left: 150px;
-  }
+    top: 100px;
+    left: 200px;
+      }
 nav {
-    position: relative;
-    top: -150px;
+    position: absolute;
+    top: -15px;
+    left: 5px;
     font-size: 18px;
 }
 nav button {}
 nav ul {
     list-style-type: none;
+   position: relative;
     margin-top: 150px;
-    padding: 0;
+    padding: 10px;
     }
 nav ul li {
    float: left;
 }
 nav ul li a {
     display: block;
-    text-align: center;
     padding: 10px;
 }
 nav ul li.active a {
@@ -65,25 +61,47 @@ nav ul li a:hover {
 }
 
 main {
-   
-}
+    float: left;
+    left: 10px; 
+   }
 main h2 {
-    text-align: center;
-    margin-top: -10px;
+    position: relative;
+    left: 0px;
+    top: 325px;
+    max-width: 600px;
     color: #008fd5;
-    padding: 0;
-    
+        
 }
 main h3 {
-    text-align: center;
-    margin-top: -10px;
+    display: none;
     color: #008fd5;
-    padding: 0;
+    }
+
+main figure { margin: 0 0 .2rem 2%; width:96%; 
+    position: relative;
+    top: 125px;
+    left: 0;
+    
+}
+main figure img {
+    
 }
 
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img {
+.current {
+    font-size: 24px;
+    float: left;
+  }
+picture img {
+    float: right;
+}
+.highlow{
+    position: relative;
+    top: 350px;
+    
+}
 
+.forecast{
+    display: none
 }
 
 footer {
