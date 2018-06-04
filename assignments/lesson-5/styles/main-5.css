@@ -5,97 +5,82 @@
 
 body {
   font-size: 16px; 
-  font-family: "Acme",sans-serif; /* Declare the base font-family */
+  font-family: "Open Sans",regular; /* Declare the base font-family */
 }
 
 header, nav, main, footer { /* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;/* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 }
 
 header {
-        float: left;
-           }
-header h1 {
-   position: absolute;
-    top: 25px;
-    left: 100px;
-    font-size: 36px;
-    color: #008fd5;
-    }
+    font-family: "Acme";
+    height: 6em;
+                   }
 header img {
-    float: left;
-        }
-header .subheading {
-    position: absolute;
+    width: 4.5rem;
+    height: auto;
+    margin-left: 1rem;
+    }
+header h1 {
+    font-size: 32px;
+    color: #008fd5;
+    margin: 0;
+    }
+header h2 {
     font-size: 24px;
     color: #e3170a;
-    top: 100px;
-    left: 200px;
-      }
+    margin: 0;
+ }
+.heading {
+    position: relative;
+    top: -6rem;
+    left: 5.5rem;
+}
 nav {
-    position: absolute;
-    top: -15px;
-    left: 5px;
-    font-size: 18px;
+       font-size: 18px;
 }
 nav button {}
 nav ul {
     list-style-type: none;
-   position: relative;
-    margin-top: 150px;
-    padding: 10px;
     }
 nav ul li {
-   float: left;
-}
+  }
 nav ul li a {
-    display: block;
-    padding: 10px;
-}
+   }
 nav ul li.active a {
     background-color: #e3170a; 
-}
+    }
 nav ul li a:hover {
     background-color: #008fd5;
-}
-
+    }   
 main {
-    float: left;
-    left: 10px; 
-   }
+      
+    }
+main figure { margin: 0 0 .2rem 2%; width:96%; 
+   
+         }
+main figure img {
+    
+       }
 main h2 {
-    position: relative;
-    left: 0px;
-    top: 325px;
-    max-width: 600px;
-    color: #008fd5;
-        
-}
+   text-align: center;
+   color: #008fd5;
+    font-family:  "acme";
+    }
 main h3 {
     display: none;
     color: #008fd5;
     }
-
-main figure { margin: 0 0 .2rem 2%; width:96%; 
-    position: relative;
-    top: 125px;
-    left: 0;
-    
-}
-main figure img {
-    
-}
-
 .current {
     font-size: 24px;
-    float: left;
+    
   }
 picture img {
-    float: right;
+   
 }
 .highlow{
-    position: relative;
+  
     top: 350px;
     
 }
