@@ -4,7 +4,8 @@
     
     nav button { display: none; }  /* hamburger button does not need to be shown in the medium on up views */
     
-    section.forecast {
-    display: inline-grid;}  /* show the 10-day forecast with the medium view and up */
+   .forecast {
+    display: inline-grid;
+    text-align: center}  /* show the 10-day forecast with the medium view and up */
 
   }
