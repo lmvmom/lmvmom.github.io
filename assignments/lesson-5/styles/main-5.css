@@ -12,7 +12,7 @@ body {
 /* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
 
 header, nav, main, footer {
-    max-width: 1300px;
+    max-width: 100%;
 }
 
 /* this next part makes the other elements on the page stay put when another element has a float property */
@@ -126,11 +126,9 @@ main h3 {
 .forecast{
     display: none;
     }
+article {border: 5px solid #e3170a;}
 
 
-.town-article {
-    border: 5px solid #e3170a;
-}
 /*changed to max-width and auto height*/
 article img {
     max-width: 100%;
