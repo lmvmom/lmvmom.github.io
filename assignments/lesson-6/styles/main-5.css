@@ -95,7 +95,7 @@ main h2 {
 /*put the styles for the image here*/
 main figure img {
     max-width: 100%;
-  
+    height: auto;   
 }
 /*this stretches the img all the way across the screen*/
 main figure {margin: 0;}
