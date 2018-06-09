@@ -16,20 +16,23 @@ header, nav, main, footer {
 }
 
 /* this next part makes the other elements on the page stay put when another element has a float property */
-header::after {
+/*header::after {
     content: "";
     clear: both;
-    display: table;
+    display: table;*/
+header {
+    padding: .5rem 2%;
+    
+}
 }
 /*I added a max-width to the logo. You could change the size of the actual logo instead. added float to the logo*/
 header img {
-    max-width: 6rem;
-    height: auto;
     float: left;
-    padding-right: 10px;
-   margin-left: 15px;
-    
-}
+    margin: 0 2% 0 0;
+    max-width: 5rem;
+    height: auto;
+   }
+
 /* I took out top and bottom removed the H1 bottom margin */
 .heading {
     font-family: "Acme",sans-serif;
@@ -37,18 +40,21 @@ header img {
 header h1 {
     font-size: 3em;
     color: #008fd5;
-    margin: 10px;
+    margin: 0;
 }
 header h2 {
     font-size: 2em;
     color: #e3170a;
-    margin: 10px;
+    margin: 0;
 }
-/*removed font size from nav beacuase it's already declared below*/
-/*moved nav button, added some styles*/
+
+header figure.logo {
+    float: left;
+    margin: 0 2% 0 0;
+}
 button {
     float: right;
-    font-size: 2rem;
+    font-size: 1.6rem;
     background-color: transparent;
     border: none;
 }
@@ -62,15 +68,15 @@ nav ul {
 }
 /* centered the text, added padding and a border */
 nav ul li {
-    border: 1px solid white;
-    padding: 10px;
+    border: 2px solid #008fd5;
+    padding: 5px;
     text-align: center;
 }
 /*removed the lines from the links. removed the padding and made the font bigger added color. Diplaying as block, makes the whole box a link You can change all the colors, font sizes etc. to be how you would like*/
 nav ul li a {
     display: block;
     padding: 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #00171f;
     text-decoration: none;
 }
@@ -81,6 +87,8 @@ nav ul li a:hover {
     background-color: #008fd5;
 }
 
+nav ul.hide {display: none;}
+
 main {}
 /*centered the h2, made it bigger*/
 main h2, h3 {
@@ -90,12 +98,14 @@ main h2 {
     color: #008fd5;
     text-align: center;
     font-size: 2.5rem;
+     
     }
 
 /*put the styles for the image here*/
 main figure img {
     max-width: 100%;
-    height: auto;   
+    height: auto; 
+     border: 5px solid #e3170a;
 }
 /*this stretches the img all the way across the screen*/
 main figure {margin: 0;}
@@ -145,3 +155,4 @@ footer {
     color: white;
     padding: 20px;
 }
+
