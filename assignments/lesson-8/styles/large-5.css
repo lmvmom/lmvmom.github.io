@@ -1,0 +1,25 @@
+@media only screen and (min-width: 64rem ) {
+    
+    /*nav ul li a{padding: .6rem 1rem;}*/
+    
+    nav button { display: none; }  /* hamburger button does not need to be shown in the medium on up views */
+    
+    nav ul.hide {display: inline-flex;}
+    nav ul{margin-left: 2%;}
+    nav ul li {
+        display: inline-flex
+    }
+    
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0);
+        padding: .6rem 1rem;
+    }
+    
+    .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+  }
