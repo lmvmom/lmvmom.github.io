@@ -25,7 +25,7 @@ header {
     flex-flow: row;
     padding: .5rem 2%;
 }
-}
+
 /*I added a max-width to the logo. You could change the size of the actual logo instead. added float to the logo*/
 header img {
     display: inline-flex;
@@ -55,11 +55,13 @@ header figure.logo {
     margin: 0 2% 0 0;
 }
 button {
-    display: flex;
-    align-content: flex-end;
+    display: block;
+    float: right;
     font-size: 1.6rem;
-    background-color: transparent;
+    background-color: black;
     border: none;
+    color: white;
+    
 }
 
 /* removed the top margin from the ul. added overflow: hidden which "stretches" the boxes*/
@@ -67,12 +69,12 @@ nav ul {
     overflow: hidden;
     background-color: #e5e059;
     list-style-type: none;
-    padding: 5px;
+    padding: 1px;
 }
 /* centered the text, added padding and a border */
 nav ul li {
     border: 2px solid #008fd5;
-    padding: 5px;
+    padding: 1px;
     text-align: center;
 }
 /*removed the lines from the links. removed the padding and made the font bigger added color. Diplaying as block, makes the whole box a link You can change all the colors, font sizes etc. to be how you would like*/
