@@ -107,13 +107,15 @@ main h2 {
     }
 
 /*put the styles for the image here*/
+/*main figure img is not on homepage*/
 main figure img {
-    max-width: 100%;
+    width: 100%;
     height: auto; 
      border: 5px solid #e3170a;
+    margin: auto;
 }
-/*this stretches the img all the way across the screen*/
-main figure {margin: 0;}
+
+
 
 
 /*moved the main h3 below, made it bigger, centered*/
@@ -122,32 +124,89 @@ main h3 {
     font-size: 1.6rem;
     text-align: center;
     }
-.weather-summary h3{
-    display: none;
+main img {
+   width: 100vw;
+   height: auto; 
+   border: 5px solid #e3170a;
+  
 }
-/*added a font size for the whole section, centered, added border*/
-.weather-summary {
+
+section.weather-summary {
     font-size: 1.5rem;
     text-align: center;
     border: 5px solid #e3170a;
     font-family: "acme",sans-serif;
+    color:  #008fd5;
 }
-.current {
-    top: 0;
-    left: 350px;
+ 
+.weather-summary h3 {
+    font-size: 2.0rem;
 }
-.current img {
-    max-width: 75px;
+.weather-summary img {
+    max-width: 150px;
 }
+
+    
+/*homepage towndata*/
+
+
+section.towndata {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 5px solid #e3170a;
+    margin: 5px
+}
+
+section.towndata p {
+    margin: 5px 5px 5px 5px
+    font-family: "Acme",sans-serif;
+    text-align: center;
+    
+}
+section.towndata ul {
+    list-style-type: none;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Acme",sans-serif;
+       margin: 5px 5px 5px 5px;   
+}
+
+footer {
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: #008fd5;
+    color: white;
+    padding: 20px;
+}
+
+/*added a font size for the whole section, centered, added border*/
+
 .forecast{
     display: none;
     }
+
+/* for homepage article*/
+main article h3 {
+ width: 100vw;
+ height: auto;
+    }
+main article img {
+    display: inline-block;
+    width: 100vw;    
+}
+
 article {border: 5px solid #e3170a;}
 article img {
     max-width: 100%;
     height: auto;
+    margin: 0px;
  }
-
+.cities figure {
+     border: 5px solid #e3170a;
+    justify-content: center;
+    text-align: center
+}
 .gallery {
     display: grid;
     grid-template-columns: 1fr;
@@ -240,12 +299,5 @@ form h3 {
     font-size: 1rem;
    display: flex;
     font-family: sans-serif;
-}
-footer {
-    text-align: center;
-    font-size: 1.3rem;
-    background-color: #008fd5;
-    color: white;
-    padding: 20px;
 }
 

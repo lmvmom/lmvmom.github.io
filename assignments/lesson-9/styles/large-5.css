@@ -16,10 +16,42 @@
         padding: .6rem 1rem;
     }
     
+    .cities {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    }
     .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;
 }
 
-  }
+    .forecast {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 1fr;
+    border: 5px solid #e3170a;
+    text-align: center;
+}
+
+    .forecast h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "acme",sans-serif;
+    color:  #008fd5;
+    font-size: 1.5rem;
+   }
+    
+ 
+    
+    .forecast table, th, td  {
+    border-collapse: collapse;
+    border: 1px solid gray;
+    padding: 10px; 
+    font-size: 1.5rem;
+    margin-top: 10px;
+    }
+    
+   
+  
