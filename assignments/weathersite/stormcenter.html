@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head> 
+    <meta charset="utf-8">
+    <meta name="description" content="Storm Center page of the Braving The Elements weather site">
+    <meta name="author" content="Lynne M. Merrill">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Braving the Elements - Storm Center</title> 
+        <link href="https://fonts.googleapis.com/css?family=Acme%7COpen+Sans" rel="stylesheet">
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="styles/main-5.css" rel="stylesheet">
+        <link href="styles/medium-5.css" rel="stylesheet">
+        <link href="styles/large-5.css" rel="stylesheet">
+    </head>
+     <body>
+      <header>
+         <figure class="logo">
+             <img src="images/weathermanlogo1.png" alt="Weatherman logo" sizes="100vw" 
+             srcset="images/weathermanlogo1.png 400w, images/weathermanlogo2.png 800w, images/weathermanlogo3.png 1200w">
+          </figure>
+           <div class = "heading">
+              <h1>Braving the Elements</h1>
+              <h2>Know Before You Go</h2>
+           </div>
+        </header>
+  <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+  <main>
+    <h2>Storm Center</h2>
+      <h2>Now You Are The Weather Hero!</h2>
+    <h2>Tell Us About Your Storm</h2>
+    <form method="get" action="thanks.html">
+      <fieldset>
+        <legend>About You</legend>
+         <label class="top">First Name* <input type="text" name="fname"  pattern="[A-Z][A-Za-z]{1,20}" required ></label>
+          <label class="top">Last Name* <input type="text" name="lname" required pattern="[A-Z][A-Za-z]{1,20}" ></label>
+          <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+          <label class="top">Phone* <input type="tel" name="phone" required placeholder="1235551234"></label> 
+          <label class="top">Zip Code<input type="number" name="zip" required></label>
+        </fieldset>  
+        <fieldset>
+          <legend>About the Storm</legend>
+            <label class="select">Storm Date <input type="date" name="stormdate"></label>
+            <label class="select">Storm Type<input list="stormtype" name="type"></label>
+        <datalist id="stormtype" class="select">
+            <option value="Flash Flood">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">        
+        </datalist>
+            <label for="rating" class="select"> How Bad is It? (1 to 10)</label>
+		<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" class="storm">
+		<span id="ratingvalue">5</span><br>
+            <label class="select">Storm Region
+               <select name="region">
+                 <option value="">Select Region </option>
+                 <option value="franklin">City of Franklin</option>
+                 <option value="greenville">Greenville</option>
+                 <option value="springfield">Town of Springfield</option> 
+                </select>
+            </label>
+       
+            <h3>Are You In DANGER?</h3>     
+      <label><input type="radio" name="danger" value="yes">Yes</label>
+      <label><input type="radio" name="danger" value="no">No</label>
+      <label><input type="radio" name="danger" value="maybe">Maybe</label>
+        </fieldset>
+            <fieldset>
+         <legend>Additional Information</legend>
+                <textarea rows="5" cols="75"></textarea> 
+          </fieldset>
+        <input type="submit" value="Report My Storm" class="submitBtn">
+    </form>
+        </main>
+    <footer>
+    <section class="contact">
+      TheWeatherman@BravingtheElements.com<br>
+      999.999.9999<br>
+      123 Main St. Anytown, US 99999<br>
+      Google Map
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Braving the Elements |<span id="currentdate">current date placeholder</span>
+    </section>
+  </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/windchill.js"> </script> 
+        <script src="scripts/currentdate.js" type="text/javascript"></script>
+</body>
+    
+    <script>
+        var urlString, urlArray, pageHREF, menu, i, currentURL;
+        urlString = document.location.href;
+        urlArray = urlString.split('/');
+        pageHREF = urlArray[urlArray.length - 1];
+
+        if (pageHREF !== "") {
+            menu = document.querySelectorAll('ul#primaryNav li a');
+            for (i = 0; i < menu.length; i++) {
+                currentURL = (menu[i].getAttribute('href'));
+                menu[i].parentNode.className = '';
+                if (currentURL === pageHREF) {
+                    menu[i].parentNode.className = 'active';
+                }
+            }
+        }
+                
+    </script> 
+</html> 

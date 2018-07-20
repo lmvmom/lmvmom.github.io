@@ -1,0 +1,303 @@
+/* Delete these CSS comments after reading. */
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: "Open Sans",regular; /* Declare the base font-family */
+}
+
+/* the comma between the selectors means apply the following CSS declarations to all of the listed elements */
+/* Declare the maximum width and other main element rules to limit the stretch on larger/wider views */
+
+header, nav, main, footer {
+    max-width: 100%;
+}
+
+/* this next part makes the other elements on the page stay put when another element has a float property */
+/*header::after {
+    content: "";
+    clear: both;
+    display: table;*/
+header {
+    display: flex;
+    flex-flow: row;
+    padding: .5rem 2%;
+}
+
+/*I added a max-width to the logo. You could change the size of the actual logo instead. added float to the logo*/
+header img {
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0 2% 0 0;
+    max-width: auto;
+    height: 5rem;
+   }
+
+/* I took out top and bottom removed the H1 bottom margin */
+.heading {
+    font-family: "Acme",sans-serif;
+}
+header h1 {
+    font-size: 3em;
+    color: #008fd5;
+    margin: 0;
+}
+header h2 {
+    font-size: 2em;
+    color: #e3170a;
+    margin: 0;
+}
+
+header figure.logo {
+    display: inline-flex;
+    margin: 0 2% 0 0;
+}
+button {
+    display: block;
+    float: right;
+    font-size: 1.6rem;
+    background-color: black;
+    border: none;
+    color: white;
+    
+}
+
+/* removed the top margin from the ul. added overflow: hidden which "stretches" the boxes*/
+nav ul {
+    overflow: hidden;
+    background-color: #e5e059;
+    list-style-type: none;
+    padding: 1px;
+}
+/* centered the text, added padding and a border */
+nav ul li {
+    border: 2px solid #008fd5;
+    padding: 1px;
+    text-align: center;
+}
+/*removed the lines from the links. removed the padding and made the font bigger added color. Diplaying as block, makes the whole box a link You can change all the colors, font sizes etc. to be how you would like*/
+nav ul li a {
+    display: flex;
+    padding: 0;
+    font-size: 1rem;
+    color: #00171f;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: #e3170a;
+}
+nav ul li a:hover {
+    background-color: #008fd5;
+}
+
+nav ul.hide {display: none;}
+
+main {}
+/*centered the h2, made it bigger*/
+main h2, h3 {
+    font-family: "Acme",sans-serif;
+}
+main h2 {
+    color: #008fd5;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: .5rem;     
+    }
+
+/*put the styles for the image here*/
+/*main figure img is not on homepage*/
+main figure img {
+    width: 100%;
+    height: auto; 
+     border: 5px solid #e3170a;
+    margin: auto;
+}
+
+
+
+
+/*moved the main h3 below, made it bigger, centered*/
+main h3 {
+    color: #008fd5;
+    font-size: 1.6rem;
+    text-align: center;
+    }
+main img {
+   width: 100vw;
+   height: auto; 
+   border: 5px solid #e3170a;
+  
+}
+
+section.weather-summary {
+    font-size: 1.5rem;
+    text-align: center;
+    border: 5px solid #e3170a;
+    font-family: "acme",sans-serif;
+    color:  #008fd5;
+}
+ 
+.weather-summary h3 {
+    font-size: 2.0rem;
+}
+.weather-summary img {
+    max-width: 150px;
+}
+
+    
+/*homepage towndata*/
+
+
+section.towndata {
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 5px solid #e3170a;
+    margin: 5px
+}
+
+section.towndata p {
+    margin: 5px 5px 5px 5px
+    font-family: "Acme",sans-serif;
+    text-align: center;
+    
+}
+section.towndata ul {
+    list-style-type: none;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Acme",sans-serif;
+       margin: 5px 5px 5px 5px;   
+}
+
+footer {
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: #008fd5;
+    color: white;
+    padding: 20px;
+}
+
+/*added a font size for the whole section, centered, added border*/
+
+.forecast{
+    display: none;
+    }
+
+/* for homepage article*/
+main article h3 {
+ width: 100vw;
+ height: auto;
+    }
+main article img {
+    display: inline-block;
+    width: 100vw;    
+}
+
+article {border: 5px solid #e3170a;}
+article img {
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+ }
+.cities figure {
+     border: 5px solid #e3170a;
+    justify-content: center;
+    text-align: center
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+}
+
+img:hover {box-shadow: 10px 10px 10px black;}
+
+/*stormcenter*/
+
+form fieldset {
+    margin: 1rem 0;
+    border: 5px solid #e3170a;
+    border-radius: 10px;
+    padding: 0.5rem 2%;
+    color: #445ba9;
+   }
+
+form legend {
+    font-family: "Acme",sans-serif;
+    color: #445ba9;
+    font: 1.6rem;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top {
+    padding-top: 1rem;
+    color: #445ba9;
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 50px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 20rem;
+    color: #445ba9;
+    background-color: rgb #999;}
+
+form label.top input:required {
+    border: red solid 3px;
+    color: #445ba9;
+}
+
+form label.top input:required:valid{
+    border: green solid 3px;
+    color: #445ba9
+}
+
+form label.select {
+    padding-top: 1rem;
+    color: #445ba9;
+    font-size: .8rem;
+}
+form label.select input, form label.select select {
+    -webkit-appearance: none;
+    display: flex;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 50px;
+    padding: .75rem;
+    width: 100%
+    max-width: 20rem;
+    color: #445ba9;
+  }
+
+.comments {
+    -webkit-appearance: none;
+    display: flex;
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    }
+form input.submitBtn {
+    border: none;
+    background-color: #e3170a;
+    color: white;
+    border-radius: 50px;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 75%;
+    max-width: 20rem;
+    }
+form h3 {
+    font-size: 1rem;
+   display: flex;
+    font-family: sans-serif;
+}
+

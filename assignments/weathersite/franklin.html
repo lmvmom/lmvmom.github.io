@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head> 
+    <meta charset="utf-8">
+    <meta name="description" content="The City of Franklin page of the Braving The Elements weather site">
+    <meta name="author" content="Lynne M. Merrill">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Braving the Elements - City of Franklin</title> 
+        <link href="https://fonts.googleapis.com/css?family=Acme%7COpen+Sans" rel="stylesheet">
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="styles/main-5.css" rel="stylesheet">
+        <link href="styles/medium-5.css" rel="stylesheet">
+        <link href="styles/large-5.css" rel="stylesheet">
+    </head>
+     <body>
+       <header>
+         <figure class="logo">
+             <img src="images/weathermanlogo1.png" alt="Weatherman logo" sizes="400w" srcset="images/weathermanlogo1.png 400w, images/weathermanlogo2.png 800w, images/weathermanlogo3.png 1200w">
+          </figure>
+           <div class = "heading">
+              <h1>Braving the Elements</h1>
+              <h2>Know Before You Go</h2>
+           </div>
+        </header>
+  <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+  <main>
+    <h2>City of Franklin</h2>
+    <figure>
+        <img src="images/lesson6-small-96.jpg"  alt="lesson image" sizes="100vw"
+             srcset="images/lesson6-large-556.jpg 1200w, images/lesson6-medium-292.jpg 800w, images/lesson6-small-96.jpg 400w">
+    </figure>
+
+    <section class="weather-summary"> 
+       <H3>Weather conditions for <span id="place">city</span></H3>   
+       <img src="images/placeholder.png" alt="current weather" id="weather_icon" sizes="50vw">  
+      <p>Current Temperature is <span id="currentTemp">00</span>&deg;<br>
+      Wind Speed is <span id="currentWind">00</span> mph<br>
+      Feels Like: <span id="wchill"></span>&deg;<br>
+      Today's High: <span id="highTemp">00</span>&deg<br> 
+      Today's Low:  <span id="lowTemp">00</span>&deg</p>
+     </section>
+      
+    <section class="forecast">
+      <h3>Ten Day Forecast</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+	   </thead>
+       <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+	   </tbody>
+      </table>
+    </section>
+    <article>
+        <h3>Franklin Breaks Record</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non varius ex. Sed ac metus non eros feugiat tempus id quis arcu. Suspendisse dictum nibh id elit vestibulum fringilla. Phasellus eget euismod tellus. Ut efficitur nisl at lobortis dapibus. Nullam id malesuada diam. Suspendisse ut mauris arcu. Proin consectetur accumsan risus in facilisis.
+      </p>
+      <img src="images/festival-small-138.jpg" alt = "festival" sizes= "100vw"
+           srcset="images/festival-large-1136.jpg 1200w, images/festival-medium-500.jpg 800w, images/festival-small-138.jpg 400w">
+    </article>		  
+   </main>
+  <footer>
+    <section class="contact">
+      TheWeatherman@BravingtheElements.com<br>
+      999.999.9999<br>
+      123 Main St. Anytown, US 99999<br>
+      Google Map
+    </section>
+    <section class="footer-bar">&copy;2018 | All Rights Reserved | Braving the Elements |<span id="currentdate">current date placeholder</span>
+    </section>
+  </footer>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js" type="text/javascript"></script>
+         <script src="scripts/scripts.js"></script>
+</body>
+    
+    <script>
+        var urlString, urlArray, pageHREF, menu, i, currentURL;
+        urlString = document.location.href;
+        urlArray = urlString.split('/');
+        pageHREF = urlArray[urlArray.length - 1];
+
+        if (pageHREF !== "") {
+            menu = document.querySelectorAll('ul#primaryNav li a');
+            for (i = 0; i < menu.length; i++) {
+                currentURL = (menu[i].getAttribute('href'));
+                menu[i].parentNode.className = '';
+                if (currentURL === pageHREF) {
+                    menu[i].parentNode.className = 'active';
+                }
+            }
+        }
+                
+    </script> 
+</html> 
