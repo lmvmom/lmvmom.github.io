@@ -1,5 +1,5 @@
 var weatherObject = new XMLHttpRequest();
-weatherObject.open('GET','http://api.openweathermap.org/data/2.5/weather?id=4759986&appid=1670610962be4ae407619555b640af11&units=imperial',true);
+weatherObject.open('GET','//api.openweathermap.org/data/2.5/weather?id=4759986&appid=1670610962be4ae407619555b640af11&units=imperial',true);
 
 weatherObject.send();
 
@@ -20,7 +20,7 @@ weatherObject.onload = function(){
  }//end of the function
 
 var weatherObject2 = new XMLHttpRequest();
-weatherObject2.open('GET','http://api.openweathermap.org/data/2.5/weather?id=4695066&appid=1670610962be4ae407619555b640af11&units=imperial',true);
+weatherObject2.open('GET','//api.openweathermap.org/data/2.5/weather?id=4695066&appid=1670610962be4ae407619555b640af11&units=imperial',true);
 
 weatherObject2.send();
 
@@ -41,7 +41,7 @@ weatherObject2.onload = function(){
 }//end of the function
 
 var weatherObject3 = new XMLHttpRequest();
-weatherObject3.open('GET','http://api.openweathermap.org/data/2.5/weather?id=4409896&appid=1670610962be4ae407619555b640af11&units=imperial',true);
+weatherObject3.open('GET','//api.openweathermap.org/data/2.5/weather?id=4409896&appid=1670610962be4ae407619555b640af11&units=imperial',true);
 
 weatherObject3.send();
 
