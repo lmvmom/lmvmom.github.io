@@ -14,7 +14,7 @@ weatherObject.onload = function(){
     document.getElementById('currentWind').innerHTML = weatherInfo.wind.speed;
            
     var iconcode = weatherInfo.weather[0].icon;
-    var icon_path = "http://openweathermap.org/img/w/" + iconcode + ".png";
+    var icon_path = "//openweathermap.org/img/w/" + iconcode + ".png";
     document.getElementById('weather_icon').src = icon_path;
   
  }//end of the function
@@ -35,7 +35,7 @@ weatherObject2.onload = function(){
     document.getElementById('currentWind2').innerHTML = weatherInfo2.wind.speed;
         
     var iconcode2 = weatherInfo2.weather[0].icon;
-    var icon_path2 = "http://openweathermap.org/img/w/" + iconcode2 + ".png";
+    var icon_path2 = "//openweathermap.org/img/w/" + iconcode2 + ".png";
     document.getElementById('weather_icon2').src = icon_path2;
 
 }//end of the function
@@ -56,7 +56,7 @@ weatherObject3.onload = function(){
     document.getElementById('currentWind3').innerHTML = weatherInfo3.wind.speed;
         
     var iconcode3 = weatherInfo3.weather[0].icon;
-    var icon_path3 = "http://openweathermap.org/img/w/" + iconcode3 + ".png";
+    var icon_path3 = "//openweathermap.org/img/w/" + iconcode3 + ".png";
     document.getElementById('weather_icon3').src = icon_path3;
 
 }//end of the function
