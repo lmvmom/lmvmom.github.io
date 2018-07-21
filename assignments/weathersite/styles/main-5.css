@@ -115,9 +115,6 @@ main figure img {
     margin: auto;
 }
 
-
-
-
 /*moved the main h3 below, made it bigger, centered*/
 main h3 {
     color: #008fd5;
@@ -127,26 +124,17 @@ main h3 {
 main img {
    width: 100vw;
    height: auto; 
-   
-  
 }
 
-section.weather-summary {
-    font-size: 1.5rem;
-    text-align: center;
-    border: 5px solid #e3170a;
-    font-family: "acme",sans-serif;
-    color:  #008fd5;
-}
- 
-.weather-summary h3 {
-    font-size: 2.0rem;
-}
-.weather-summary img {
-    max-width: 150px;
-}
+/* for homepage article*/
 
-    
+article {border: 5px solid #e3170a;}
+
+article img {
+    width: 100vw;
+     }
+
+
 /*homepage towndata*/
 
 
@@ -172,7 +160,20 @@ section.towndata ul {
     margin: 5px 5px 5px 5px;   
 }
 
-
+section.weather-summary {
+    font-size: 1.5rem;
+    text-align: center;
+    border: 5px solid #e3170a;
+    font-family: "acme",sans-serif;
+    color:  #008fd5;
+}
+ 
+.weather-summary h3 {
+    font-size: 2.0rem;
+}
+.weather-summary img {
+    max-width: 150px;
+}
 
 /*added a font size for the whole section, centered, added border*/
 
@@ -180,23 +181,7 @@ section.towndata ul {
     display: none;
     }
 
-/* for homepage article*/
-main article h3 {
- width: 100vw;
- height: auto;
-    }
-main article img {
-    display: inline-block;
-    width: 100vw;    
-}
 
-article {border: 5px solid #e3170a;}
-
-article img {
-    max-width: 100%;
-    height: auto;
-    margin: 0px;
- }
 .cities figure {
      border: 5px solid #e3170a;
     justify-content: center;
