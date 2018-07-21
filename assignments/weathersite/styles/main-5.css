@@ -127,7 +127,7 @@ main h3 {
 main img {
    width: 100vw;
    height: auto; 
-   border: 5px solid #e3170a;
+   
   
 }
 
@@ -172,13 +172,7 @@ section.towndata ul {
     margin: 5px 5px 5px 5px;   
 }
 
-footer {
-    text-align: center;
-    font-size: 1.3rem;
-    background-color: #008fd5;
-    color: white;
-    padding: 20px;
-}
+
 
 /*added a font size for the whole section, centered, added border*/
 
@@ -197,6 +191,7 @@ main article img {
 }
 
 article {border: 5px solid #e3170a;}
+
 article img {
     max-width: 100%;
     height: auto;
@@ -301,3 +296,11 @@ form h3 {
     font-family: sans-serif;
 }
 
+footer {
+    text-align: center;
+    font-size: 1.0rem;
+    background-color: #008fd5;
+    color: white;
+    padding: 20px;
+    max-width: 100%;
+}

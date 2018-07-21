@@ -13,15 +13,10 @@
         <link href="styles/large-5.css" rel="stylesheet">
     </head>
      <body>
-       <header>
-         <figure class="logo">
-             <img src="images/weathermanlogo1.png" alt="Weatherman logo" sizes="400w" srcset="images/weathermanlogo1.png 400w, images/weathermanlogo2.png 800w, images/weathermanlogo3.png 1200w">
-          </figure>
-           <div class = "heading">
-              <h1>Braving the Elements</h1>
-              <h2>Know Before You Go</h2>
-           </div>
+      <header includefile="header.html">
+           
         </header>
+         
   <nav class="clearfix">
       <button onclick="toggleMenu()">&#9776;</button>
     <ul id="primaryNav" class="hide">
@@ -80,16 +75,10 @@
            srcset="images/thunderstorm-large.jpg 1200w, images/thunderstorm-medium.jpg 800w, images/thunderstorm-small.jpg 400w">
     </article>		  
    </main>
-  <footer>
-    <section class="contact">
-      TheWeatherman@BravingtheElements.com<br>
-      999.999.9999<br>
-      123 Main St. Anytown, US 99999<br>
-      Google Map
-    </section>
-    <section class="footer-bar">&copy;2018 | All Rights Reserved | Braving the Elements |<span id="currentdate">current date placeholder</span>
-    </section>
+  <footer includefile="footer.html">
+      
   </footer>
+         <script src="scripts/includes.js"></script>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js" type="text/javascript"></script>
          <script src="scripts/scripts.js"></script>
